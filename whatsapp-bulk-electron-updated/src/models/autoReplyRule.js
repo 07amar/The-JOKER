@@ -1,0 +1,1 @@
+const { DataTypes } = require('sequelize'); const sequelize = require('../db/sequelize'); const AutoReplyRule = sequelize.define('AutoReplyRule', { name: DataTypes.STRING, keywords: DataTypes.STRING, response: DataTypes.TEXT, active: { type: DataTypes.BOOLEAN, defaultValue: true } }); module.exports = AutoReplyRule;

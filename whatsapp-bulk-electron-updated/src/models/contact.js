@@ -1,0 +1,1 @@
+const { DataTypes } = require('sequelize'); const sequelize = require('../db/sequelize'); const Contact = sequelize.define('Contact', { name: DataTypes.STRING, number: DataTypes.STRING, var1: DataTypes.STRING, meta: DataTypes.JSON }); module.exports = Contact;

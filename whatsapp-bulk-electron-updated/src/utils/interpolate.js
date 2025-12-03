@@ -1,0 +1,1 @@
+module.exports = function interpolate(template = '', contact = {}) { return template.replace(/\{\{\s*name\s*\}\}/gi, contact.name || '').replace(/\{\{\s*number\s*\}\}/gi, contact.number || '').replace(/\{\{\s*var1\s*\}\}/gi, contact.var1 || ''); };

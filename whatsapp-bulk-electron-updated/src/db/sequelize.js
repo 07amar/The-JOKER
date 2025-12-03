@@ -1,0 +1,1 @@
+const { Sequelize } = require('sequelize'); const { dbUrl } = require('../config/config'); const sequelize = new Sequelize(dbUrl, { logging: false }); module.exports = sequelize;

@@ -1,0 +1,1 @@
+const { DataTypes } = require('sequelize'); const sequelize = require('../db/sequelize'); const Attachment = sequelize.define('Attachment', { filename: DataTypes.STRING, originalname: DataTypes.STRING, caption: DataTypes.STRING, mime: DataTypes.STRING, size: DataTypes.INTEGER }); module.exports = Attachment;

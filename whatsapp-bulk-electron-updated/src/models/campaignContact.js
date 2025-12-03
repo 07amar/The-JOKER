@@ -1,0 +1,1 @@
+const { DataTypes } = require('sequelize'); const sequelize = require('../db/sequelize'); const CampaignContact = sequelize.define('CampaignContact', { sentAt: DataTypes.DATE, status: DataTypes.STRING, providerResponse: DataTypes.JSON }); module.exports = CampaignContact;

@@ -1,0 +1,1 @@
+const { DataTypes } = require('sequelize'); const sequelize = require('../db/sequelize'); const Log = sequelize.define('Log', { level: DataTypes.STRING, message: DataTypes.TEXT, meta: DataTypes.JSON }); module.exports = Log;
